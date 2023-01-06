@@ -1,0 +1,13 @@
+.page-wrapper {
+  display: flex;
+}
+
+.left {
+  width: 40vw;
+  border: 1px solid black;
+}
+
+.right {
+  border: 1px solid red;
+  flex: 3;
+}
