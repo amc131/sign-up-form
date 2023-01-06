@@ -68,6 +68,31 @@ label, input {
 }
 
 label {
-  font-size: .8rem;
+  font-size: .7rem;
+  font-weight: 450;
   margin-bottom: 5px;
+}
+
+.right-footer button {
+  background-color: #596D48;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  width: 175px;
+  height: 35px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.right-footer p {
+  font-size: .9rem;
+  font-weight: 450;
+  margin-left: 2rem;
+  margin-top: 25px;
+}
+
+.right-footer a {
+  color: #596D48;
+  font-weight: 450;
+  text-decoration: none;
 }
