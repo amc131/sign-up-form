@@ -1,13 +1,73 @@
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: local("Norse-Bold"),
+    url("resources/Norse-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: var(--system-ui);
+}
+
 .page-wrapper {
   display: flex;
 }
 
 .left {
   width: 40vw;
+  height: 90vh;
+  max-height: 100%;
   border: 1px solid black;
+  background-image: url("resources/photo-1585202900225-6d3ac20a6962.webp");
+  background-size: cover;
 }
 
 .right {
-  border: 1px solid red;
+  width: 60vw;
+  height: 90vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
   flex: 3;
+}
+
+.right-header {
+  background-color: #F9FAFB;
+  height: 40%;
+}
+
+.right-body {
+  height: 45%;
+}
+
+.right-footer {
+  background-color: #F9FAFB;
+  height: 40%;
+}
+
+.right-body h3 {
+  margin-left: 2rem;
+  font-weight: 550;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+label, input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: .8rem;
+  margin-bottom: 5px;
 }
