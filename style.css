@@ -35,8 +35,11 @@ body {
 }
 
 .right-header {
-  background-color: #F9FAFB;
-  height: 40%;
+  height: 30%;
+  width: 75%;
+  font-weight: 600;
+  margin-top: 6rem;
+  margin-left: 2rem;
 }
 
 .right-body {
@@ -71,6 +74,41 @@ label {
   font-size: .7rem;
   font-weight: 450;
   margin-bottom: 5px;
+}
+
+.left-header {
+  display: flex;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 9rem;
+} 
+
+.left-header img {
+  height: 6rem;
+  width: auto;
+}
+
+.left-header h1 {
+  color: white;
+  font-family: "Norse-Bold";
+  font-size: 5rem;
+  padding-top: 1.5rem;
+}
+
+.img-src {
+  font-size: .8rem;
+  font-weight: 100;
+  position: relative;
+  top: 35rem;
+  text-align: center;
+}
+
+.img-src,
+a {
+  color: white;
 }
 
 .right-footer button {
