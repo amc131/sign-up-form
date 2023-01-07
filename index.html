@@ -7,6 +7,7 @@
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -15,6 +16,10 @@
         <div class="left-header">
           <img src="resources/odin-lined-2.png">
           <h1>ODIN</h1>
+        </div>
+        <div class="img-src">
+          <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+             <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
         </div>
       </div>
     </div>
@@ -48,16 +53,17 @@
           </div>
           <div class="form-row">
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" />
+            <input type="password" id="password" name="password" class="error" onkeyup="check()" />
           </div>
           <div class="form-row">
             <label for="confirm-pass">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-pass" name="confirm-pass" />
+            <input type="password" id="confirm-pass" name="confirm-pass" class="error" onkeyup="check()" />
           </div>
         </form>
+        <p class="error-msg">* Passwords do not match</p>
       </div>
       <div class="right-footer">
-        <button>Create Account</button>
+        <button type='submit' class="submit-btn">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
